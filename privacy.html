@@ -16,7 +16,7 @@
     .meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 1.25rem; }
     nav a { color: var(--link); text-decoration: none; font-size: 0.92rem; }
     hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
-    ul { padding-left: 1.2rem; }
+    ul, ol { padding-left: 1.2rem; }
     section[lang="en"] { display: none; }
     html.en section[lang="zh-CN"] { display: none; }
     html.en section[lang="en"] { display: block; }
@@ -36,90 +36,242 @@
     <section lang="zh-CN">
       <h1>隐私政策</h1>
       <p class="meta">生效日期：2026-07-18<br>开发者：Lizzy（lizzy@myday.app）<br>应用：「时间去哪了」（My Day）</p>
-      <p>本政策说明我们如何处理与本应用相关的信息。我们以「本地优先」为原则：活动记录、标签、目标、计划等核心数据默认保存在您的设备上。</p>
-      <h2>一、我们处理的信息</h2>
-      <ol>
-        <li>您创建的内容：活动记录、标签、目标、计划、日记/今日一句、照片附件、打卡与洞察状态等，默认存储在本机。</li>
-        <li>设备权限相关数据（仅在您授权后使用）：
-          <ul>
-            <li>麦克风与语音识别：用于语音输入记录活动；识别在设备本地进行，我们不会将录音或转写上传到我们的服务器。</li>
-            <li>照片/相机：用于为活动添加照片，照片保存在本机。</li>
-            <li>屏幕使用时间（Screen Time / Family Controls，若您启用）：用于导入本机屏幕用时数据到日历；数据在本机处理。</li>
-            <li>通知：用于计划提醒等，仅在您开启相关功能后使用。</li>
-          </ul>
-        </li>
-        <li>购买与订购：订阅与终身购买通过 Apple 的 App Store / StoreKit 处理。我们不会收到您的完整支付卡信息；我们可能在本机保存订购状态、档位与到期日等权益信息，以便解锁功能。</li>
-        <li>账号（若您使用登录）：可能包括邮箱等您提供的账号信息，用于验证与同步相关能力（以您实际启用的功能为准）。</li>
-      </ol>
-      <h2>二、我们如何使用信息</h2>
+
+      <h2>一、引言</h2>
+      <p>本隐私政策（「本政策」）说明 Lizzy（「我们」「开发者」）在您使用 iOS 应用「时间去哪了」（My Day，「本应用」）时如何处理相关信息。我们重视您的隐私，并以本地优先为产品设计原则。使用本应用即表示您已阅读本政策；若您不同意，请停止使用并联系我们。</p>
+
+      <h2>二、本政策的适用范围</h2>
+      <p>本政策适用于：</p>
       <ul>
-        <li>提供、维护与改进应用功能（计时、日历、目标、计划、洞察、订购权益等）。</li>
-        <li>在您授权的前提下使用系统能力（语音、照片、屏幕用时、通知）。</li>
-        <li>履行购买与恢复购买相关的必要处理。</li>
+        <li>本应用在您的 Apple 设备上的安装与使用；</li>
+        <li>通过本应用内设置、App Store 页面或 lizzy@myday.app 与我们联系时提供的信息；</li>
+        <li>您选择启用的可选功能（如账号登录、云同步、小组件、实时活动等）。</li>
       </ul>
-      <h2>三、存储、传输与第三方</h2>
+      <p>本政策不适用于 Apple Inc.、支付处理方或其他第三方独立运营的服务；其数据处理受其各自政策约束。</p>
+
+      <h2>三、何谓个人数据</h2>
+      <p>在本政策中，「个人数据」指与已识别或可识别的自然人相关的信息。例如：您创建的活动记录与日记、您为活动附加的照片、您提供的账号邮箱、设备上保存的订购权益状态，以及与您使用本应用相关的技术标识符（若存在）。经匿名化且无法合理重新识别您的信息，一般不视为个人数据。</p>
+
+      <h2>四、本地优先原则</h2>
+      <p>本应用的核心承诺是：活动记录、标签、目标、计划、日记/今日一句、照片附件、打卡与习惯洞察等主要内容<strong>默认保存在您的设备上</strong>，由您直接控制。我们不会将上述内容出售给广告商，也不会出于定向广告目的向第三方共享。若您未启用账号或同步功能，大多数数据不会离开您的设备。</p>
+
+      <h2>五、我们处理的信息</h2>
+      <p><strong>5.1 您创建的内容</strong></p>
       <ul>
-        <li>核心用户内容默认本地存储。若您启用云同步或账号相关服务，数据可能按该功能的说明在您的账号体系中传输/存储。</li>
-        <li>语音识别使用 Apple 系统接口；在部分系统配置下，Apple 的语音识别可能需要网络。我们不会另行把音频上传到自有服务器。</li>
-        <li>支付与订购由 Apple 处理，并适用 Apple 的相关政策。</li>
-        <li>我们不向广告商出售您的个人数据。</li>
+        <li>活动与时间记录、标签、目标、计划、日记/今日一句；</li>
+        <li>为活动添加的照片及说明；</li>
+        <li>打卡、习惯洞察状态、应用内偏好设置；</li>
+        <li>导出文件（若您使用导出功能）。</li>
       </ul>
-      <h2>四、数据保留与删除</h2>
+      <p>上述内容默认存储在本机数据库或应用沙盒中。</p>
+
+      <p><strong>5.2 设备权限相关数据</strong>（仅在您授权后使用）</p>
       <ul>
-        <li>本机数据由您控制。您可在设置中清空本机数据（订购权益可能按产品规则保留）。</li>
-        <li>卸载应用通常会删除本机数据（以系统行为为准）。</li>
-        <li>与 Apple 订购相关的管理、取消与退款，请通过 Apple ID / 系统「订阅」设置处理。</li>
+        <li><strong>麦克风与语音识别：</strong>用于语音输入以记录活动。识别优先在设备本地进行；我们不会将录音或转写文本上传到自有服务器。语音识别通过 Apple 系统接口实现；在部分系统配置下，Apple 的语音识别服务可能需要网络连接，并受 Apple 隐私政策约束。</li>
+        <li><strong>照片与相机：</strong>用于为活动选择或拍摄照片；照片保存在本机，未经您操作不会上传至我们的服务器。</li>
+        <li><strong>屏幕使用时间 / 家庭控制（Family Controls，可选）：</strong>若您启用，用于从本机导入屏幕使用数据以展示在日历中；数据在本机读取与处理。</li>
+        <li><strong>通知：</strong>用于计划提醒、计时相关提示等；您可在系统设置中随时关闭。</li>
       </ul>
-      <h2>五、儿童隐私</h2>
-      <p>本应用不以儿童为主要受众。若您认为我们无意中收集了儿童的个人信息，请联系我们以便处理。</p>
-      <h2>六、政策更新</h2>
-      <p>我们可能更新本政策。更新后会调整生效日期；继续使用即表示您知悉更新后的政策（法律另有要求的除外）。</p>
-      <h2>七、联系我们</h2>
+
+      <p><strong>5.3 购买与订购</strong></p>
+      <p>「时间去哪了 Pro」的按月/按年自动续订订阅及终身购买通过 Apple App Store / StoreKit 处理。我们不会收到您的完整银行卡号或 Apple ID 密码。我们可能在本机保存订购档位、权益状态、到期日或终身标识，以便解锁相应功能并支持「恢复购买」。</p>
+
+      <p><strong>5.4 账号与身份验证（若您使用）</strong></p>
+      <p>若您选择注册或登录，我们可能处理您提供的邮箱、身份验证令牌，以及为同步或账号相关功能所必需的最少账号元数据。具体范围以应用内实际提供的功能为准。</p>
+
+      <p><strong>5.5 技术信息与诊断</strong></p>
+      <ul>
+        <li>本应用<strong>不集成</strong>第三方广告追踪 SDK，也不向广告网络出售个人数据。</li>
+        <li>若您通过系统向 Apple 共享崩溃报告或诊断数据，该等信息由 Apple 按其政策处理；我们可能通过 Apple 提供的开发者工具查看匿名化或聚合的崩溃信息以修复问题。</li>
+        <li>为提供小组件、Live Activity 或 App Group 功能，相关摘要数据可能在您设备上的本应用与扩展/小组件之间共享，不因此上传至我们的服务器（除非您另行启用同步）。</li>
+      </ul>
+
+      <p><strong>5.6 小组件、Live Activity 与 App Group</strong></p>
+      <p>为在锁定屏幕、主屏幕或灵动岛展示计时或计划摘要，本应用可能通过 Apple 的 App Group 在应用本体与扩展之间共享有限的状态数据。该共享限于您的设备，用于展示您已启用的功能。</p>
+
+      <h2>六、我们如何使用信息</h2>
+      <p>我们将信息用于以下目的：</p>
+      <ul>
+        <li>提供、维护与改进本应用功能（计时、日历、目标、计划、洞察、导出、Pro 权益等）；</li>
+        <li>在您授权的前提下调用系统能力（语音、照片、屏幕使用时间、通知）；</li>
+        <li>验证订购状态、处理恢复购买及履行与您的合同关系；</li>
+        <li>若您启用账号或同步，提供相应的验证与数据同步服务；</li>
+        <li>回应您的支持请求、执行本政策并遵守适用法律；</li>
+        <li>在征得同意或法律允许的情况下，发送与服务相关的重要通知（如政策重大变更）。</li>
+      </ul>
+      <p>我们不会将您的个人数据用于向第三方出售，也不会用于与上述目的无关的 profiling 式广告。</p>
+
+      <h2>七、处理的法律依据（适用于欧洲经济区、英国等地区读者）</h2>
+      <p>在相关法律要求提供法律依据时，我们依赖以下基础（以实际处理活动为准）：</p>
+      <ul>
+        <li><strong>合同履行：</strong>为提供您请求的应用功能及 Pro 订购权益；</li>
+        <li><strong>合法利益：</strong>保障应用安全、修复错误、改进功能，且该利益不对您的权利造成不当影响；</li>
+        <li><strong>同意：</strong>对麦克风、照片、通知、屏幕使用时间等系统权限，以及在法律要求下对可选功能（如营销邮件，若将来提供）的处理，以您在系统或应用内的授权为准，您可随时撤回。</li>
+      </ul>
+      <p>我们并非一律主张适用某一特定法域的全部规则；若您所在地区赋予您额外权利，我们将在法律要求范围内尊重该等权利。</p>
+
+      <h2>八、共享与第三方</h2>
+      <p>我们不会出售您的个人数据。在以下有限情形下，信息可能被访问或处理：</p>
+      <ul>
+        <li><strong>Apple：</strong>App Store 支付、StoreKit、系统语音识别、iCloud（若您使用且功能依赖）、崩溃报告等，均受 Apple 政策约束。</li>
+        <li><strong>服务提供商：</strong>若将来使用托管、邮件或支持工具，我们仅会委托处理履行功能所必需的数据，并要求其遵守保密与安全义务。</li>
+        <li><strong>法律要求：</strong>在法律、法院命令或保护权利所必需时，我们可能披露信息。</li>
+        <li><strong>业务变更：</strong>若发生合并、收购或资产转让，我们将要求继受方继续受本政策约束或提供同等保护，并在法律要求时通知您。</li>
+      </ul>
+
+      <h2>九、存储、安全、保留与删除</h2>
+      <p><strong>存储与安全：</strong>本机数据受 iOS 沙盒与设备加密保护。若启用云同步，数据将按该功能的说明存储于相应基础设施。我们采取合理的技术与组织措施降低未经授权访问、丢失或滥用的风险，但无法保证绝对安全。</p>
+      <p><strong>保留：</strong>本机内容由您控制，在您删除或清空前通常一直保留。订购权益记录可能在验证所需期间保留。支持通信在解决问题所需期间保留。</p>
+      <p><strong>删除：</strong></p>
+      <ul>
+        <li>您可在应用「设置」中清空本机数据（订购权益状态可能按产品规则保留以便恢复购买）；</li>
+        <li>卸载应用通常会删除本机应用数据（以 iOS 行为为准）；</li>
+        <li>Apple 订阅的管理、取消与退款请通过 Apple ID →「订阅」处理；</li>
+        <li>若您使用账号功能，可联系 lizzy@myday.app 请求删除账号相关数据，我们将在合理期限内处理（法律保留义务除外）。</li>
+      </ul>
+
+      <h2>十、跨境传输</h2>
+      <p>默认情况下，您的核心内容存储在您的设备上，不发生跨境传输。若您启用账号、同步或支持服务，数据可能被传输至您所在国家/地区以外并由服务提供商处理。在该等情形下，我们将采取适用法律要求的保护措施（例如标准合同条款或同等机制，若适用）。</p>
+
+      <h2>十一、您的权利</h2>
+      <p>根据您所在地区法律，您可能享有访问、更正、删除、限制处理、数据可携带、反对处理及撤回同意等权利。您通常可以：</p>
+      <ul>
+        <li>在应用内直接查看、编辑或删除大部分本机内容；</li>
+        <li>在 iOS 设置中管理权限与通知；</li>
+        <li>通过 lizzy@myday.app 联系我们行使权利。</li>
+      </ul>
+      <p>加利福尼亚州居民：我们不出售个人信息的「销售」行为（含加州法律定义的 share 用于跨情境行为广告）。欧洲经济区/英国用户：您有权向监管机构投诉；我们鼓励您先与我们联系以便解决。</p>
+      <p>我们将在适用法律要求的期限内回复您的请求，并可能需验证您的身份。</p>
+
+      <h2>十二、儿童</h2>
+      <p>本应用并非主要面向 13 周岁（或您所在司法辖区规定的更高年龄）以下儿童。我们不会故意收集该年龄段儿童的个人信息。若您认为我们无意中收集了儿童信息，请通过 lizzy@myday.app 联系我们，我们将尽快删除。</p>
+
+      <h2>十三、本政策的变更</h2>
+      <p>我们可能不时更新本政策。重大变更时，我们将更新生效日期，并可能通过应用内提示或 App Store 更新说明等方式通知您。更新后继续使用本应用，即表示您知悉修订后的政策（法律另有要求的除外）。</p>
+
+      <h2>十四、联系我们</h2>
+      <p>如对本政策或数据处理有任何问题、请求或投诉，请联系：</p>
       <p>邮箱：<a href="mailto:lizzy@myday.app">lizzy@myday.app</a></p>
     </section>
 
     <section lang="en">
       <h1>Privacy Policy</h1>
       <p class="meta">Effective date: 2026-07-18<br>Developer: Lizzy (lizzy@myday.app)<br>App: My Day (“时间去哪了”)</p>
-      <p>This Policy explains how information related to the App is handled. We follow a local-first approach: core content such as activity records, tags, goals, and plans is stored on your device by default.</p>
-      <h2>1. Information we process</h2>
+
+      <h2>1. Introduction</h2>
+      <p>This Privacy Policy (“Policy”) explains how Lizzy (“we,” “us,” “Developer”) handles information when you use the iOS application My Day (“时间去哪了,” the “App”). We care about your privacy and designed the App with a local-first approach. By using the App, you acknowledge this Policy. If you do not agree, please stop using the App and contact us.</p>
+
+      <h2>2. Scope</h2>
+      <p>This Policy applies to:</p>
       <ul>
-        <li>Content you create: activities, tags, goals, plans, journal / daily sentence, photos, check-ins, insight states, and similar data — stored on-device by default.</li>
-        <li>Permission-related data (only after you grant access):
-          <ul>
-            <li>Microphone &amp; Speech Recognition: used for voice logging; recognition runs on-device; we do not upload audio or transcripts to our servers.</li>
-            <li>Photos / Camera: used to attach photos to activities; photos stay on-device.</li>
-            <li>Screen Time / Family Controls (if enabled): used to import on-device screen-time data into the calendar; processed on-device.</li>
-            <li>Notifications: used for plan reminders and similar features when enabled.</li>
-          </ul>
-        </li>
-        <li>Purchases: subscriptions and lifetime purchases are processed by Apple App Store / StoreKit. We do not receive your full payment card details. We may store entitlement status, plan, and expiration locally to unlock features.</li>
-        <li>Account (if you sign in): may include email and related account data you provide, for authentication and sync features you enable.</li>
+        <li>Your installation and use of the App on Apple devices;</li>
+        <li>Information you provide when contacting us via in-app settings, the App Store listing, or lizzy@myday.app;</li>
+        <li>Optional features you enable (such as account sign-in, cloud sync, widgets, or Live Activities).</li>
       </ul>
-      <h2>2. How we use information</h2>
+      <p>This Policy does not govern Apple Inc., payment processors, or other third parties that operate their own services; their handling of data is subject to their respective policies.</p>
+
+      <h2>3. What counts as personal data</h2>
+      <p>For this Policy, “personal data” means information relating to an identified or identifiable person. Examples include activity records and journal entries you create, photos you attach to activities, an email you provide for an account, on-device subscription entitlement status, and technical identifiers linked to your use of the App (where applicable). Information that has been anonymized and cannot reasonably be re-linked to you is generally not personal data.</p>
+
+      <h2>4. Local-first principle</h2>
+      <p>Our core promise: activity records, tags, goals, plans, journal / daily sentence entries, photo attachments, check-ins, and habit insights are <strong>stored on your device by default</strong> and remain under your control. We do not sell this content to advertisers or share it with third parties for cross-context behavioral advertising. If you do not enable account or sync features, most data never leaves your device.</p>
+
+      <h2>5. Information we process</h2>
+      <p><strong>5.1 Content you create</strong></p>
       <ul>
-        <li>To provide and improve App features (timer, calendar, goals, plans, insights, entitlements).</li>
-        <li>To use system capabilities you authorize (speech, photos, screen time, notifications).</li>
-        <li>To support purchase and restore flows.</li>
+        <li>Activities and time records, tags, goals, plans, journal / daily sentence entries;</li>
+        <li>Photos and captions attached to activities;</li>
+        <li>Check-ins, habit insight states, and in-app preferences;</li>
+        <li>Exported files (if you use export features).</li>
       </ul>
-      <h2>3. Storage, transfer, and third parties</h2>
+      <p>This content is stored locally in on-device databases or the App sandbox by default.</p>
+
+      <p><strong>5.2 Device permissions</strong> (only after you grant access)</p>
       <ul>
-        <li>Core content is local by default. If you enable cloud sync or account services, data may be transmitted/stored under those features.</li>
-        <li>Speech uses Apple system APIs; depending on system settings, Apple speech recognition may require network. We do not separately upload audio to our own servers.</li>
-        <li>Payments are handled by Apple under Apple’s policies.</li>
-        <li>We do not sell your personal data to advertisers.</li>
+        <li><strong>Microphone &amp; Speech Recognition:</strong> used for voice input to log activities. Recognition runs on-device where possible; we do not upload recordings or transcripts to our own servers. Speech uses Apple system APIs; depending on device settings, Apple’s speech services may require a network connection and are governed by Apple’s privacy policy.</li>
+        <li><strong>Photos &amp; Camera:</strong> used to select or capture photos for activities; photos remain on-device unless you take separate action to share them.</li>
+        <li><strong>Screen Time / Family Controls (optional):</strong> if enabled, used to import on-device screen-time data for calendar display; processed on-device.</li>
+        <li><strong>Notifications:</strong> used for plan reminders, timer-related alerts, and similar features; you may disable them in system Settings at any time.</li>
       </ul>
-      <h2>4. Retention and deletion</h2>
+
+      <p><strong>5.3 Purchases</strong></p>
+      <p>My Day Pro auto-renewable subscriptions (monthly/yearly) and lifetime purchases are processed through Apple App Store / StoreKit. We do not receive your full payment card number or Apple ID password. We may store plan tier, entitlement status, expiration, or lifetime flags on-device to unlock features and support Restore Purchases.</p>
+
+      <p><strong>5.4 Account &amp; authentication (if you use it)</strong></p>
+      <p>If you choose to register or sign in, we may process the email you provide, authentication tokens, and minimal account metadata needed for sync or account-related features. The exact scope depends on features actually offered in the App.</p>
+
+      <p><strong>5.5 Technical &amp; diagnostic information</strong></p>
       <ul>
-        <li>You control on-device data. You may clear local data in Settings (subscription entitlement may be retained per product rules).</li>
-        <li>Uninstalling usually removes on-device data (subject to the OS).</li>
-        <li>Manage, cancel, or request refunds for Apple subscriptions via Apple ID / system Subscriptions settings.</li>
+        <li>The App does <strong>not</strong> integrate third-party advertising trackers and does not sell personal data to ad networks.</li>
+        <li>If you share crash reports or diagnostics with Apple, Apple processes that information under its policies; we may review anonymized or aggregated crash data through Apple developer tools to fix issues.</li>
+        <li>To support widgets, Live Activities, or App Groups, limited summary data may be shared on your device between the App and its extensions without uploading to our servers (unless you separately enable sync).</li>
       </ul>
-      <h2>5. Children’s privacy</h2>
-      <p>The App is not directed at children. Contact us if you believe a child’s personal information was collected inadvertently.</p>
-      <h2>6. Changes</h2>
-      <p>We may update this Policy and the effective date. Continued use means you acknowledge the updated Policy, except where law requires otherwise.</p>
-      <h2>7. Contact</h2>
+
+      <p><strong>5.6 Widgets, Live Activities &amp; App Groups</strong></p>
+      <p>To show timer or plan summaries on the Lock Screen, Home Screen, or Dynamic Island, the App may share limited state through Apple’s App Group container between the main App and extensions. This sharing stays on your device and supports features you have enabled.</p>
+
+      <h2>6. How we use information</h2>
+      <p>We use information to:</p>
+      <ul>
+        <li>Provide, maintain, and improve App features (timer, calendar, goals, plans, insights, export, Pro entitlements);</li>
+        <li>Use system capabilities you authorize (speech, photos, screen time, notifications);</li>
+        <li>Verify subscription status, support restore purchases, and perform our contract with you;</li>
+        <li>Provide authentication and sync if you enable account features;</li>
+        <li>Respond to support requests, enforce this Policy, and comply with law;</li>
+        <li>Send important service-related notices where permitted (e.g., material Policy changes).</li>
+      </ul>
+      <p>We do not use your personal data for sale to third parties or unrelated profiling for advertising.</p>
+
+      <h2>7. Legal bases (for EEA / UK readers)</h2>
+      <p>Where law requires a legal basis, we rely on the following (depending on the activity):</p>
+      <ul>
+        <li><strong>Contract:</strong> to provide App features and Pro entitlements you request;</li>
+        <li><strong>Legitimate interests:</strong> to secure the App, fix bugs, and improve functionality, where those interests are not overridden by your rights;</li>
+        <li><strong>Consent:</strong> for system permissions (microphone, photos, notifications, screen time) and, where required, optional features such as marketing email if ever offered—you may withdraw consent at any time through system or in-app controls.</li>
+      </ul>
+      <p>We do not claim to be subject to every rule in every jurisdiction by default; where your local law grants additional rights, we will honor them as required.</p>
+
+      <h2>8. Sharing &amp; third parties</h2>
+      <p>We do not sell your personal data. Limited sharing may occur:</p>
+      <ul>
+        <li><strong>Apple:</strong> App Store payments, StoreKit, system speech recognition, iCloud (if used by a feature), crash reporting—each governed by Apple’s policies.</li>
+        <li><strong>Service providers:</strong> if we later use hosting, email, or support tools, we will share only what is necessary and require confidentiality and security commitments.</li>
+        <li><strong>Legal requirements:</strong> we may disclose information when required by law, court order, or to protect rights and safety.</li>
+        <li><strong>Business transfers:</strong> if we undergo a merger, acquisition, or asset sale, we will require successors to honor this Policy or provide equivalent protection and notify you where required by law.</li>
+      </ul>
+
+      <h2>9. Storage, security, retention &amp; deletion</h2>
+      <p><strong>Storage &amp; security:</strong> on-device data is protected by iOS sandboxing and device encryption. If you enable cloud sync, data is stored as described for that feature. We use reasonable technical and organizational measures to reduce unauthorized access, loss, or misuse, but no system is perfectly secure.</p>
+      <p><strong>Retention:</strong> local content remains until you delete or clear it. Entitlement records may be kept as long as needed to verify purchases. Support correspondence is kept as long as needed to resolve issues.</p>
+      <p><strong>Deletion:</strong></p>
+      <ul>
+        <li>Clear local data in App Settings (entitlement state may be retained per product rules to support restore);</li>
+        <li>Uninstalling the App usually removes on-device App data (subject to iOS behavior);</li>
+        <li>Manage, cancel, or request refunds for Apple subscriptions via Apple ID → Subscriptions;</li>
+        <li>For account features, email lizzy@myday.app to request deletion of account-related data; we will respond within a reasonable period (subject to legal retention obligations).</li>
+      </ul>
+
+      <h2>10. International transfers</h2>
+      <p>By default, your core content stays on your device and is not transferred across borders. If you enable account, sync, or support services, data may be processed outside your country by service providers. Where required, we implement appropriate safeguards (such as standard contractual clauses or equivalent mechanisms, if applicable).</p>
+
+      <h2>11. Your rights</h2>
+      <p>Depending on your location, you may have rights to access, correct, delete, restrict, port, or object to processing, and to withdraw consent. You can usually:</p>
+      <ul>
+        <li>View, edit, or delete most on-device content in the App;</li>
+        <li>Manage permissions and notifications in iOS Settings;</li>
+        <li>Contact lizzy@myday.app to exercise your rights.</li>
+      </ul>
+      <p>California residents: we do not “sell” or “share” personal information as defined under California law for cross-context behavioral advertising. EEA/UK users: you may lodge a complaint with a supervisory authority; we encourage you to contact us first.</p>
+      <p>We will respond within timeframes required by applicable law and may need to verify your identity.</p>
+
+      <h2>12. Children</h2>
+      <p>The App is not directed at children under 13 (or the higher age required in your jurisdiction). We do not knowingly collect personal information from children. If you believe we have inadvertently collected a child’s information, contact lizzy@myday.app and we will delete it promptly.</p>
+
+      <h2>13. Changes</h2>
+      <p>We may update this Policy from time to time. For material changes, we will update the effective date and may notify you through in-app notice or App Store release notes. Continued use after an update means you acknowledge the revised Policy, except where law requires otherwise.</p>
+
+      <h2>14. Contact</h2>
+      <p>Questions, requests, or complaints about this Policy or our data practices:</p>
       <p>Email: <a href="mailto:lizzy@myday.app">lizzy@myday.app</a></p>
     </section>
   </main>
