@@ -35,7 +35,7 @@
 
     <section lang="zh-CN">
       <h1>隐私政策</h1>
-      <p class="meta">生效日期：2026-07-18<br>开发者：Lizzy（lizzy@myday.app）<br>应用：「一记天光」（LumDay）</p>
+      <p class="meta">生效日期：2026-08-12<br>开发者：Lizzy（lizzy@myday.app）<br>应用：「一记天光」（LumDay）</p>
 
       <h2>一、引言</h2>
       <p>本隐私政策（「本政策」）说明 Lizzy（「我们」「开发者」）在您使用 iOS 应用「一记天光」（LumDay，「本应用」）时如何处理相关信息。我们重视您的隐私，并以本地优先为产品设计原则。使用本应用即表示您已阅读本政策；若您不同意，请停止使用并联系我们。</p>
@@ -53,7 +53,8 @@
       <p>在本政策中，「个人数据」指与已识别或可识别的自然人相关的信息。例如：您创建的活动记录与日记、您为活动附加的照片、您提供的账号邮箱、设备上保存的订购权益状态，以及与您使用本应用相关的技术标识符（若存在）。经匿名化且无法合理重新识别您的信息，一般不视为个人数据。</p>
 
       <h2>四、本地优先原则</h2>
-      <p>本应用的核心承诺是：活动记录、标签、目标、计划、日记/今日一句、照片附件、打卡与习惯洞察等主要内容<strong>默认保存在您的设备上</strong>，由您直接控制。我们不会将上述内容出售给广告商，也不会出于定向广告目的向第三方共享。若您未启用账号或同步功能，大多数数据不会离开您的设备。</p>
+      <p>本应用的核心承诺是：活动记录、标签、目标、计划、日记/今日一句、照片附件、打卡与习惯洞察等主要内容<strong>默认保存在您的设备上</strong>，由您直接控制。我们不会将上述内容出售给广告商，也不会出于定向广告目的向第三方共享。若您未启用账号或云同步，大多数数据不会离开您的设备。</p>
+      <p>本应用默认通过您的 <strong>Apple iCloud（CloudKit）私有数据库</strong>同步业务数据（设备已登录 iCloud 且未开启「仅本地」时，含未登录 App 账号的游客阶段）。您可在「设置 → 云同步」开启仅本地模式以关闭云同步（更改后需重启应用生效）。Apple 登录主要用于账号身份；登录页会再次说明默认同步策略。</p>
 
       <h2>五、我们处理的信息</h2>
       <p><strong>5.1 您创建的内容</strong></p>
@@ -77,7 +78,9 @@
       <p>「一记天光 Pro」的按月/按年自动续订订阅及终身购买通过 Apple App Store / StoreKit 处理。我们不会收到您的完整银行卡号或 Apple ID 密码。我们可能在本机保存订购档位、权益状态、到期日或终身标识，以便解锁相应功能并支持「恢复购买」。</p>
 
       <p><strong>5.4 账号与身份验证（若您使用）</strong></p>
-      <p>若您选择注册或登录，我们可能处理您提供的邮箱、身份验证令牌，以及为同步或账号相关功能所必需的最少账号元数据。具体范围以应用内实际提供的功能为准。</p>
+      <p>首发以 <strong>Sign in with Apple</strong> 为主。我们可能处理 Apple 提供的用户标识、可选邮箱（含私密转递）与姓名（通常仅首次授权时提供）。Apple <strong>不</strong>向本应用提供头像；若您自行上传头像，该图片仅保存在本机。邮箱密码注册能力可能在后续版本提供。</p>
+      <p><strong>5.4.1 云同步（CloudKit，默认开启；可改为仅本地）</strong></p>
+      <p>在默认同步或您未开启仅本地时，以下内容可存储于您 Apple ID 下的 <strong>iCloud CloudKit 私有数据库</strong>（由 Apple 托管，非开发者自建服务器）：活动记录（含标题、感受记录、时间、来源及屏幕用时关联的 App 标识 <code>sourceBundleId</code>）、标签、打卡、目标与阶段、今日一句、计划块及同步所需元数据。下列内容<strong>不</strong>上传至 CloudKit：活动照片与目标封面的图片文件、账号头像文件、语音录音与转写文本、端侧 AI 的原始调用内容。照片仍默认仅保存在本机；未经您另行分享操作，不会上传至开发者服务器。若本机曾以仅本地方式建库，开启云同步时应用可能自动迁移元数据（图片文件仍留本机）。</p>
 
       <p><strong>5.5 技术信息与诊断</strong></p>
       <ul>
@@ -120,18 +123,19 @@
       </ul>
 
       <h2>九、存储、安全、保留与删除</h2>
-      <p><strong>存储与安全：</strong>本机数据受 iOS 沙盒与设备加密保护。若启用云同步，数据将按该功能的说明存储于相应基础设施。我们采取合理的技术与组织措施降低未经授权访问、丢失或滥用的风险，但无法保证绝对安全。</p>
-      <p><strong>保留：</strong>本机内容由您控制，在您删除或清空前通常一直保留。订购权益记录可能在验证所需期间保留。支持通信在解决问题所需期间保留。</p>
+      <p><strong>存储与安全：</strong>本机数据受 iOS 沙盒与设备加密保护。在<strong>默认同步开启</strong>（未改为仅本地）时，业务数据还存储于 Apple iCloud CloudKit 私有数据库，并受 Apple 政策与安全措施约束。我们采取合理的技术与组织措施降低未经授权访问、丢失或滥用的风险，但无法保证绝对安全。</p>
+      <p><strong>保留：</strong>本机与（默认同步或您未开启仅本地时的）iCloud 中的内容由您控制，在您删除或清空前通常一直保留。订购权益记录可能在验证所需期间保留。支持通信在解决问题所需期间保留。</p>
       <p><strong>删除：</strong></p>
       <ul>
-        <li>您可在应用「设置」中清空本机数据（订购权益状态可能按产品规则保留以便恢复购买）；</li>
-        <li>卸载应用通常会删除本机应用数据（以 iOS 行为为准）；</li>
+        <li>未登录时可在应用「设置 → 数据」中「清空本地数据」：经二次确认后仅删除本机业务数据，不会删除已同步的 iCloud 内容；已登录用户如需同时删除本机与云端，请使用「删除账号」；</li>
+        <li>卸载应用通常会删除本机应用数据（以 iOS 行为为准）；已同步的 iCloud 数据可能仍保留，直至您删除账号或在系统中管理 iCloud 数据；</li>
         <li>Apple 订阅的管理、取消与退款请通过 Apple ID →「订阅」处理；</li>
-        <li>若您使用账号功能，可在应用内「设置 → 账号 → 删除账号」自行删除账号登录信息（邮箱账号须验证密码）；亦可联系 lizzy@myday.app 请求协助。删除账号默认不清空本机活动记录（法律保留义务除外）。</li>
+        <li>您可在「设置 → 账号 → 删除账号」经二次确认后删除账号登录信息，并同时删除本机与已同步云端的业务数据。退出登录仅结束会话并删除本机头像，不会删除活动等业务数据。</li>
+        <li>亦可联系 lizzy@myday.app 请求协助（法律保留义务除外）。</li>
       </ul>
 
       <h2>十、跨境传输</h2>
-      <p>默认情况下，您的核心内容存储在您的设备上，不发生跨境传输。若您启用账号、同步或支持服务，数据可能被传输至您所在国家/地区以外并由服务提供商处理。在该等情形下，我们将采取适用法律要求的保护措施（例如标准合同条款或同等机制，若适用）。</p>
+      <p>本机内容始终在您的设备上。在默认同步开启时，CloudKit 数据由 Apple 按其基础设施与政策处理，可能涉及跨境。若您启用账号或支持服务，相关数据亦可能由服务提供商在您所在国家/地区以外处理。在该等情形下，我们将采取适用法律要求的保护措施（例如标准合同条款或同等机制，若适用）。</p>
 
       <h2>十一、您的权利</h2>
       <p>根据您所在地区法律，您可能享有访问、更正、删除、限制处理、数据可携带、反对处理及撤回同意等权利。您通常可以：</p>
@@ -156,7 +160,7 @@
 
     <section lang="en">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective date: 2026-07-18<br>Developer: Lizzy (lizzy@myday.app)<br>App: LumDay (“一记天光”)</p>
+      <p class="meta">Effective date: 2026-08-12<br>Developer: Lizzy (lizzy@myday.app)<br>App: LumDay (“一记天光”)</p>
 
       <h2>1. Introduction</h2>
       <p>This Privacy Policy (“Policy”) explains how Lizzy (“we,” “us,” “Developer”) handles information when you use the iOS application LumDay (“一记天光,” the “App”). We care about your privacy and designed the App with a local-first approach. By using the App, you acknowledge this Policy. If you do not agree, please stop using the App and contact us.</p>
@@ -174,7 +178,8 @@
       <p>For this Policy, “personal data” means information relating to an identified or identifiable person. Examples include activity records and journal entries you create, photos you attach to activities, an email you provide for an account, on-device subscription entitlement status, and technical identifiers linked to your use of the App (where applicable). Information that has been anonymized and cannot reasonably be re-linked to you is generally not personal data.</p>
 
       <h2>4. Local-first principle</h2>
-      <p>Our core promise: activity records, tags, goals, plans, journal / daily sentence entries, photo attachments, check-ins, and habit insights are <strong>stored on your device by default</strong> and remain under your control. We do not sell this content to advertisers or share it with third parties for cross-context behavioral advertising. If you do not enable account or sync features, most data never leaves your device.</p>
+      <p>Our core promise: activity records, tags, goals, plans, journal / daily sentence entries, photo attachments, check-ins, and habit insights are <strong>stored on your device by default</strong> and remain under your control. We do not sell this content to advertisers or share it with third parties for cross-context behavioral advertising. If you do not enable account or cloud sync, most data never leaves your device.</p>
+      <p>By default the App syncs business data via your <strong>Apple iCloud (CloudKit) private database</strong> when the device is signed into iCloud and Local-only mode is off (including guest use before App sign-in). You can enable Local-only under Settings → Cloud Sync to turn sync off (requires app restart). Sign in with Apple is primarily for account identity; the sign-in screen also describes the default sync policy.</p>
 
       <h2>5. Information we process</h2>
       <p><strong>5.1 Content you create</strong></p>
@@ -198,7 +203,9 @@
       <p>LumDay Pro auto-renewable subscriptions (monthly/yearly) and lifetime purchases are processed through Apple App Store / StoreKit. We do not receive your full payment card number or Apple ID password. We may store plan tier, entitlement status, expiration, or lifetime flags on-device to unlock features and support Restore Purchases.</p>
 
       <p><strong>5.4 Account &amp; authentication (if you use it)</strong></p>
-      <p>If you choose to register or sign in, we may process the email you provide, authentication tokens, and minimal account metadata needed for sync or account-related features. The exact scope depends on features actually offered in the App.</p>
+      <p>Launch sign-in is <strong>Sign in with Apple</strong>. We may process the Apple user identifier, optional email (including Hide My Email), and name (often only on first authorization). Apple does <strong>not</strong> provide a profile photo to the App; if you upload an avatar, it stays on-device only. Email/password registration may return in a later version.</p>
+      <p><strong>5.4.1 Cloud sync (CloudKit, on by default; Local-only available)</strong></p>
+      <p>While default sync is on (Local-only off), the following may be stored in the <strong>iCloud CloudKit private database</strong> under your Apple ID (hosted by Apple, not on Developer-owned servers): activity records (titles, feeling log / notes field, times, source, and Screen Time–related app identifiers <code>sourceBundleId</code>), tags, check-ins, goals and phases, daily sentences, planned blocks, and sync metadata. The following are <strong>not</strong> uploaded to CloudKit: activity photo and goal-cover image files, account avatar files, voice recordings and transcripts, and on-device AI prompt payloads. Photos remain on-device by default and are not uploaded to Developer servers unless you separately share them. If the on-device store was created in local-only mode, enabling cloud sync may automatically migrate metadata (image files stay on device).</p>
 
       <p><strong>5.5 Technical &amp; diagnostic information</strong></p>
       <ul>
@@ -241,18 +248,19 @@
       </ul>
 
       <h2>9. Storage, security, retention &amp; deletion</h2>
-      <p><strong>Storage &amp; security:</strong> on-device data is protected by iOS sandboxing and device encryption. If you enable cloud sync, data is stored as described for that feature. We use reasonable technical and organizational measures to reduce unauthorized access, loss, or misuse, but no system is perfectly secure.</p>
-      <p><strong>Retention:</strong> local content remains until you delete or clear it. Entitlement records may be kept as long as needed to verify purchases. Support correspondence is kept as long as needed to resolve issues.</p>
+      <p><strong>Storage &amp; security:</strong> on-device data is protected by iOS sandboxing and device encryption. While <strong>default sync is on</strong> (Local-only off), business data is also stored in Apple iCloud CloudKit private databases under Apple’s policies and security controls. We use reasonable technical and organizational measures to reduce unauthorized access, loss, or misuse, but no system is perfectly secure.</p>
+      <p><strong>Retention:</strong> on-device and (while default sync is on / Local-only is off) iCloud content remains until you delete or clear it. Entitlement records may be kept as long as needed to verify purchases. Support correspondence is kept as long as needed to resolve issues.</p>
       <p><strong>Deletion:</strong></p>
       <ul>
-        <li>Clear local data in App Settings (entitlement state may be retained per product rules to support restore);</li>
-        <li>Uninstalling the App usually removes on-device App data (subject to iOS behavior);</li>
+        <li>While signed out, use Settings → Data → Clear local data: after confirmation, delete on-device business data only (synced iCloud data is not deleted). While signed in, use Delete account to remove on-device and synced cloud data;</li>
+        <li>Uninstalling the App usually removes on-device App data (subject to iOS behavior); synced iCloud data may remain until you delete the account or manage iCloud data in system Settings;</li>
         <li>Manage, cancel, or request refunds for Apple subscriptions via Apple ID → Subscriptions;</li>
-        <li>For account features, delete account credentials in Settings → Account → Delete account (email accounts require password confirmation), or email lizzy@myday.app for help. Deleting an account does not clear on-device activity records by default (subject to legal retention obligations).</li>
+        <li>Delete account in Settings → Account → Delete account after confirmation to remove sign-in state and on-device plus synced cloud business data. Signing out only ends the session and removes the on-device avatar; it does not delete activity records.</li>
+        <li>You may also email lizzy@myday.app for help (subject to legal retention obligations).</li>
       </ul>
 
       <h2>10. International transfers</h2>
-      <p>By default, your core content stays on your device and is not transferred across borders. If you enable account, sync, or support services, data may be processed outside your country by service providers. Where required, we implement appropriate safeguards (such as standard contractual clauses or equivalent mechanisms, if applicable).</p>
+      <p>On-device content stays on your device. While default sync is on, CloudKit data is processed by Apple under its infrastructure and policies and may involve cross-border processing. If you enable account or support services, related data may also be processed outside your country by service providers. Where required, we implement appropriate safeguards (such as standard contractual clauses or equivalent mechanisms, if applicable).</p>
 
       <h2>11. Your rights</h2>
       <p>Depending on your location, you may have rights to access, correct, delete, restrict, port, or object to processing, and to withdraw consent. You can usually:</p>
