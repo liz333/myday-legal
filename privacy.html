@@ -5,292 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>隐私政策 · Privacy Policy · 一记天光</title>
   <style>
-    :root { color-scheme: light dark; --fg: #1a1a1a; --muted: #555; --link: #5b4fc7; --bg: #fafafa; --rule: #e5e5e5; }
-    @media (prefers-color-scheme: dark) {
-      :root { --fg: #f2f2f2; --muted: #bbb; --link: #b7a9ff; --bg: #121212; --rule: #333; }
-    }
+    :root { color-scheme: light dark; --fg: #1a1a1a; --muted: #555; --link: #3D8EC4; --bg: #fafafa; --rule: #e5e5e5; }
+    @media (prefers-color-scheme: dark) { :root { --fg: #f2f2f2; --muted: #bbb; --link: #74B6E5; --bg: #121212; --rule: #333; } }
     body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--fg); line-height: 1.65; }
     main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-    h1 { font-size: 1.55rem; margin: 0 0 0.35rem; }
-    h2 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
-    .meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 1.25rem; }
-    nav a { color: var(--link); text-decoration: none; font-size: 0.92rem; }
-    hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
-    ul, ol { padding-left: 1.2rem; }
-    section[lang="en"] { display: none; }
-    html.en section[lang="zh-CN"] { display: none; }
-    html.en section[lang="en"] { display: block; }
-    .switch { margin: 0 0 1.25rem; font-size: 0.9rem; }
-    .switch button { background: none; border: 0; color: var(--link); font: inherit; font-weight: 600; cursor: pointer; padding: 0; }
+    h1 { font-size: 1.55rem; margin: 0 0 .35rem; } h2 { font-size: 1.1rem; margin: 1.6rem 0 .5rem; }
+    .meta, .muted { color: var(--muted); } .meta { font-size: .92rem; margin-bottom: 1.25rem; }
+    nav a { color: var(--link); text-decoration: none; font-size: .92rem; }
+    section[lang="en"] { display: none; } html.en section[lang="zh-CN"] { display: none; } html.en section[lang="en"] { display: block; }
+    .switch { margin: 0 0 1.25rem; font-size: .9rem; } .switch button { background: none; border: 0; color: var(--link); font: inherit; font-weight: 600; cursor: pointer; padding: 0; }
   </style>
 </head>
 <body>
   <main>
     <nav><a href="index.html">← 首页 / Home</a></nav>
-    <p class="switch">
-      <button type="button" onclick="document.documentElement.classList.remove('en')">中文</button>
-      ·
-      <button type="button" onclick="document.documentElement.classList.add('en')">English</button>
-    </p>
-
+    <p class="switch"><button type="button" onclick="document.documentElement.classList.remove('en')">中文</button> · <button type="button" onclick="document.documentElement.classList.add('en')">English</button></p>
     <section lang="zh-CN">
       <h1>隐私政策</h1>
-      <p class="meta">生效日期：2026-08-31<br>开发者（developer.lumday@outlook.com）<br>应用：「一记天光」（LumDay）</p>
-
-      <h2>一、引言</h2>
-      <p>本隐私政策（「本政策」）说明开发者（「我们」）在您使用 iOS 应用「一记天光」（LumDay，「本应用」）时如何处理相关信息。我们重视您的隐私，并以本地优先为产品设计原则。使用本应用即表示您已阅读本政策；若您不同意，请停止使用并联系我们。</p>
-
-      <h2>二、本政策的适用范围</h2>
-      <p>本政策适用于：</p>
-      <ul>
-        <li>本应用在您的 Apple 设备上的安装与使用；</li>
-        <li>通过本应用内设置、App Store 页面或 developer.lumday@outlook.com 与我们联系时提供的信息；</li>
-        <li>您选择启用的可选功能（如账号登录、云同步、小组件、实时活动等）。</li>
-      </ul>
-      <p>本政策不适用于 Apple Inc.、支付处理方或其他第三方独立运营的服务；其数据处理受其各自政策约束。</p>
-
-      <h2>三、何谓个人数据</h2>
-      <p>在本政策中，「个人数据」指与已识别或可识别的自然人相关的信息。例如：您创建的活动记录与日记、您为活动附加的照片、您提供的账号邮箱、设备上保存的订购权益状态，以及与您使用本应用相关的技术标识符（若存在）。经匿名化且无法合理重新识别您的信息，一般不视为个人数据。</p>
-
-      <h2>四、本地优先原则</h2>
-      <p>本应用的核心承诺是：活动记录、标签、目标、计划、日记/今日一句、照片附件、打卡与习惯洞察等主要内容<strong>保存在您的设备上</strong>，由您直接控制。我们不会将上述内容出售给广告商，也不会出于定向广告目的向第三方共享。设备已登录 iCloud 且未开启「仅本地」时，业务记录另经 Apple iCloud（CloudKit）私有库同步（含未登录 App 账号的游客阶段）。</p>
-      <p>本应用默认通过您的 <strong>Apple iCloud（CloudKit）私有数据库</strong>同步业务数据（设备已登录 iCloud 且未开启「仅本地」时，含未登录 App 账号的游客阶段）。您可在「设置 → 云同步」开启仅本地模式以关闭云同步（更改后需重启应用生效）。Apple 登录主要用于账号身份；登录页会再次说明默认同步策略。</p>
-
-      <h2>五、我们处理的信息</h2>
-      <p><strong>5.1 您创建的内容</strong></p>
-      <ul>
-        <li>活动与时间记录、标签、目标、计划、日记/今日一句；</li>
-        <li>为活动添加的照片及说明；</li>
-        <li>打卡、习惯洞察状态、应用内偏好设置；</li>
-        <li>导出文件（若您使用导出功能）。</li>
-      </ul>
-      <p>上述内容默认存储在本机数据库或应用沙盒中。</p>
-
-      <p><strong>5.2 设备权限相关数据</strong>（仅在您授权后使用）</p>
-      <ul>
-        <li><strong>麦克风与语音识别：</strong>用于语音输入以记录活动。识别通过 Apple 系统接口完成；在部分系统配置下，Apple 的语音识别服务可能需要网络连接，并受 Apple 隐私政策约束。我们不会将录音或转写文本上传到自有服务器。</li>
-        <li><strong>定位：</strong>仅用于按当地日出日落调整壁纸天空。坐标只在本机计算日出日落，<strong>不会上传</strong>到我们的服务器或 CloudKit。启动时<strong>不</strong>请求定位；进入「设置 → 日历与显示」或打开「跟随当地时间」时才会弹出系统授权。未授权或拒绝时，壁纸按时区近似日出日落。</li>
-        <li><strong>照片与相机：</strong>用于为活动选择或拍摄照片；照片保存在本机，未经您操作不会上传至我们的服务器。</li>
-        <li><strong>通知：</strong>用于计划提醒、计时相关提示等；您可在系统设置中随时关闭。</li>
-      </ul>
-
-      <p><strong>5.3 购买与订购</strong></p>
-      <p>「一记天光 Pro」的按月/按年自动续订订阅及终身购买通过 Apple App Store / StoreKit 处理。我们不会收到您的完整银行卡号或 Apple ID 密码。我们可能在本机保存订购档位、权益状态、到期日或终身标识，以便解锁相应功能并支持「恢复购买」。</p>
-
-      <p><strong>5.4 账号与身份验证（若您使用）</strong></p>
-      <p>首发以 <strong>Sign in with Apple</strong> 为主。我们可能处理 Apple 提供的用户标识、可选邮箱（含私密转递）与姓名（通常仅首次授权时提供）。Apple <strong>不</strong>向本应用提供头像；若您自行上传头像，该图片仅保存在本机。邮箱密码注册能力可能在后续版本提供。</p>
-      <p><strong>5.4.1 云同步（CloudKit，默认开启；可改为仅本地）</strong></p>
-      <p>在默认同步或您未开启仅本地时，以下内容可存储于您 Apple ID 下的 <strong>iCloud CloudKit 私有数据库</strong>（由 Apple 托管，非开发者自建服务器）：活动记录（含标题、感受记录、时间、来源及可选的历史导入 App 标识 <code>sourceBundleId</code>）、标签、打卡、目标与阶段、今日一句、计划块及同步所需元数据。下列内容<strong>不</strong>上传至 CloudKit：活动照片与目标封面的图片文件、账号头像文件、语音录音与转写文本、端侧 AI 的原始调用内容。照片仍默认仅保存在本机；未经您另行分享操作，不会上传至开发者服务器。若本机曾以仅本地方式建库，开启云同步时应用可能自动迁移元数据（图片文件仍留本机）。</p>
-
-      <p><strong>5.5 技术信息与诊断</strong></p>
-      <ul>
-        <li>本应用<strong>不集成</strong>第三方广告追踪 SDK，也不向广告网络出售个人数据。</li>
-        <li>为了解功能使用情况并改进产品，本应用可能向 <strong>TelemetryDeck</strong>（隐私向分析服务，服务器位于欧盟）发送<strong>匿名</strong>用量信号，例如：是否点了计时或语音按钮、是否打开「了解自我」、计时是否成功保存。信号为事件名称，可附带是否订购 Pro 的布尔值；<strong>不含</strong>活动标题、感受记录、语音原文、照片或您的 Apple 账号。详见 <a href="https://telemetrydeck.com/privacy/">TelemetryDeck 隐私说明</a>。</li>
-        <li>若您通过系统向 Apple 共享崩溃报告或诊断数据，该等信息由 Apple 按其政策处理；我们可能通过 Apple 提供的开发者工具查看匿名化或聚合的崩溃信息以修复问题。</li>
-        <li>为提供小组件、Live Activity 或 App Group 功能，相关摘要数据可能在您设备上的本应用与扩展/小组件之间共享，不因此上传至我们的服务器（除非您另行启用同步）。</li>
-      </ul>
-
-      <p><strong>5.6 小组件、Live Activity 与 App Group</strong></p>
-      <p>为在锁定屏幕、主屏幕或灵动岛展示计时或计划摘要，本应用可能通过 Apple 的 App Group 在应用本体与扩展之间共享有限的状态数据。该共享限于您的设备，用于展示您已启用的功能。</p>
-
-      <h2>六、我们如何使用信息</h2>
-      <p>我们将信息用于以下目的：</p>
-      <ul>
-        <li>提供、维护与改进本应用功能（计时、日历、目标、计划、洞察、导出、Pro 权益等）；</li>
-        <li>在您授权的前提下调用系统能力（语音、照片、通知、定位）；</li>
-        <li>验证订购状态、处理恢复购买及履行与您的合同关系；</li>
-        <li>若您启用账号或同步，提供相应的验证与数据同步服务；</li>
-        <li>回应您的支持请求、执行本政策并遵守适用法律；</li>
-        <li>在征得同意或法律允许的情况下，发送与服务相关的重要通知（如政策重大变更）。</li>
-      </ul>
-      <p>我们不会将您的个人数据用于向第三方出售，也不会用于与上述目的无关的 profiling 式广告。</p>
-
-      <h2>七、处理的法律依据（适用于欧洲经济区、英国等地区读者）</h2>
-      <p>在相关法律要求提供法律依据时，我们依赖以下基础（以实际处理活动为准）：</p>
-      <ul>
-        <li><strong>合同履行：</strong>为提供您请求的应用功能及 Pro 订购权益；</li>
-        <li><strong>合法利益：</strong>保障应用安全、修复错误、改进功能，且该利益不对您的权利造成不当影响；</li>
-        <li><strong>同意：</strong>对麦克风、照片、通知、定位等系统权限，以及在法律要求下对可选功能（如营销邮件，若将来提供）的处理，以您在系统或应用内的授权为准，您可随时撤回。</li>
-      </ul>
-      <p>我们并非一律主张适用某一特定法域的全部规则；若您所在地区赋予您额外权利，我们将在法律要求范围内尊重该等权利。</p>
-
-      <h2>八、共享与第三方</h2>
-      <p>我们不会出售您的个人数据。在以下有限情形下，信息可能被访问或处理：</p>
-      <ul>
-        <li><strong>Apple：</strong>App Store 支付、StoreKit、系统语音识别、iCloud（若您使用且功能依赖）、崩溃报告等，均受 Apple 政策约束。</li>
-        <li><strong>TelemetryDeck：</strong>匿名产品用量信号（事件名，不含活动内容），用于改进功能；处理受其隐私政策约束。</li>
-        <li><strong>服务提供商：</strong>若将来使用托管、邮件或支持工具，我们仅会委托处理履行功能所必需的数据，并要求其遵守保密与安全义务。</li>
-        <li><strong>法律要求：</strong>在法律、法院命令或保护权利所必需时，我们可能披露信息。</li>
-        <li><strong>业务变更：</strong>若发生合并、收购或资产转让，我们将要求继受方继续受本政策约束或提供同等保护，并在法律要求时通知您。</li>
-      </ul>
-
-      <h2>九、存储、安全、保留与删除</h2>
-      <p><strong>存储与安全：</strong>本机数据受 iOS 沙盒与设备加密保护。在<strong>默认同步开启</strong>（未改为仅本地）时，业务数据还存储于 Apple iCloud CloudKit 私有数据库，并受 Apple 政策与安全措施约束。我们采取合理的技术与组织措施降低未经授权访问、丢失或滥用的风险，但无法保证绝对安全。</p>
-      <p><strong>保留：</strong>本机与（默认同步或您未开启仅本地时的）iCloud 中的内容由您控制，在您删除或清空前通常一直保留。订购权益记录可能在验证所需期间保留。支持通信在解决问题所需期间保留。</p>
-      <p><strong>删除：</strong></p>
-      <ul>
-        <li>未登录时可在应用「设置 → 数据」中「清空本地数据」：经二次确认后仅删除本机业务数据，不会删除已同步的 iCloud 内容；已登录用户如需同时删除本机与云端，请使用「删除账号」；</li>
-        <li>卸载应用通常会删除本机应用数据（以 iOS 行为为准）；已同步的 iCloud 数据可能仍保留，直至您删除账号或在系统中管理 iCloud 数据；</li>
-        <li>Apple 订阅的管理、取消与退款请通过 Apple ID →「订阅」处理；</li>
-        <li>您可在「设置 → 账号 → 删除账号」经二次确认后删除账号登录信息，并同时删除本机与已同步云端的业务数据。退出登录仅结束会话并删除本机头像，不会删除活动等业务数据。</li>
-        <li>亦可联系 developer.lumday@outlook.com 请求协助（法律保留义务除外）。</li>
-      </ul>
-
-      <h2>十、跨境传输</h2>
-      <p>本机内容始终在您的设备上。在默认同步开启时，CloudKit 数据由 Apple 按其基础设施与政策处理，可能涉及跨境。若您启用账号或支持服务，相关数据亦可能由服务提供商在您所在国家/地区以外处理。在该等情形下，我们将采取适用法律要求的保护措施（例如标准合同条款或同等机制，若适用）。</p>
-
-      <h2>十一、您的权利</h2>
-      <p>根据您所在地区法律，您可能享有访问、更正、删除、限制处理、数据可携带、反对处理及撤回同意等权利。您通常可以：</p>
-      <ul>
-        <li>在应用内直接查看、编辑或删除大部分本机内容；</li>
-        <li>在 iOS 设置中管理权限与通知；</li>
-        <li>通过 developer.lumday@outlook.com 联系我们行使权利。</li>
-      </ul>
-      <p>加利福尼亚州居民：我们不出售个人信息的「销售」行为（含加州法律定义的 share 用于跨情境行为广告）。欧洲经济区/英国用户：您有权向监管机构投诉；我们鼓励您先与我们联系以便解决。</p>
-      <p>我们将在适用法律要求的期限内回复您的请求，并可能需验证您的身份。</p>
-
-      <h2>十二、儿童</h2>
-      <p>本应用并非主要面向 13 周岁（或您所在司法辖区规定的更高年龄）以下儿童。我们不会故意收集该年龄段儿童的个人信息。若您认为我们无意中收集了儿童信息，请通过 developer.lumday@outlook.com 联系我们，我们将尽快删除。</p>
-
-      <h2>十三、本政策的变更</h2>
-      <p>我们可能不时更新本政策。重大变更时，我们将更新生效日期，并可能通过应用内提示或 App Store 更新说明等方式通知您。更新后继续使用本应用，即表示您知悉修订后的政策（法律另有要求的除外）。</p>
-
-      <h2>十四、联系我们</h2>
-      <p>如对本政策或数据处理有任何问题、请求或投诉，请联系：</p>
-      <p>邮箱：<a href="mailto:developer.lumday@outlook.com">developer.lumday@outlook.com</a></p>
+      <p class="meta">生效日期：2026-10-13<br>开发者：LumDay（developer.lumday@outlook.com）<br>应用：「一记天光」（LumDay）</p>
+      <h2>一、你保存的信息</h2>
+      <p>你创建的心情片刻、标签、文字、所选照片、每日手写日记和应用偏好保存在设备上的应用数据库或文件中。未完成的记录草稿仅保存在本机，不计入回放分析或手动备份。你可以不登录使用核心记录功能。</p>
+      <h2>二、iCloud 与账号</h2>
+      <p>如果设备已登录 iCloud 且你未选择“仅本地”，本应用会使用 Apple 的 CloudKit 私有数据库同步业务记录。实际同步由 Apple 系统负责，可能需要时间。本版本不开放新的 LumDay 账号注册或登录；既有账号仅保留退出、清理及必要的身份恢复入口，iCloud 同步不依赖该应用账号。Apple 服务受 Apple 自己的隐私政策约束。旧版时间记录的图片文件可能仍只保存在原设备。</p>
+      <h2>三、语音转文字与照片</h2>
+      <p>只有你主动使用语音转文字时，应用才会请求麦克风和语音识别权限。Apple 系统语音服务负责识别；是否联网及音频处理方式可能受系统设置影响。应用不将原始录音作为记录长期保存，也不把音频或转写发送到开发者自有服务器。照片仅在你通过系统照片选择器选中后读取。只有你选择将分享图片保存到照片图库时，应用才会请求添加照片权限。</p>
+      <h2>四、应用锁</h2>
+      <p>你可以设置独立的应用密码并选择启用 Face ID。密码验证信息存储在本应用专用的设备 Keychain 项目中。应用锁用于遮挡界面访问，不加密应用数据库，也不能代替设备密码。</p>
+      <h2>五、手动备份</h2>
+      <p>备份文件包含当前与旧版记录、日记、标签及可用附件。新格式以归档文件逐项处理附件；旧版 JSON 备份的读取上限为 64 MiB。备份未加密，请保存在安全位置。导入前会校验文件，并以合并方式添加本机缺少的数据，不会先清空现有内容。</p>
+      <h2>六、分析与分享</h2>
+      <p>情绪分析依据你明确保存的心情、时间和标签，只描述记录中的共同出现情况，不判断原因、诊断心理状况或提供医疗建议。分享图片由你选择内容并预览后生成；本应用不会将分享内容上传到开发者服务器或创建公开链接。</p>
+      <h2>七、诊断、广告与数据保留</h2>
+      <p>本版本不集成广告追踪 SDK，也不启动产品用量分析服务。若你在系统设置中选择共享崩溃诊断数据，将由 Apple 按其政策处理。数据通常保留到你删除、清除本机数据或管理 iCloud 数据为止；手动备份文件由你自行管理。关闭 iCloud 前，请先确认需要保留的数据已有备份。</p>
+      <h2>八、儿童与联系我们</h2>
+      <p>本应用并非面向 13 周岁以下儿童。若你认为我们误收集了儿童信息，或有隐私及数据请求，请联系 <a href="mailto:developer.lumday@outlook.com">developer.lumday@outlook.com</a>。</p>
     </section>
-
     <section lang="en">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective date: 2026-08-31<br>Developer (developer.lumday@outlook.com)<br>App: LumDay (“一记天光”)</p>
-
-      <h2>1. Introduction</h2>
-      <p>This Privacy Policy (“Policy”) explains how the Developer (“we,” “us”) handles information when you use the iOS application LumDay (“一记天光,” the “App”). We care about your privacy and designed the App with a local-first approach. By using the App, you acknowledge this Policy. If you do not agree, please stop using the App and contact us.</p>
-
-      <h2>2. Scope</h2>
-      <p>This Policy applies to:</p>
-      <ul>
-        <li>Your installation and use of the App on Apple devices;</li>
-        <li>Information you provide when contacting us via in-app settings, the App Store listing, or developer.lumday@outlook.com;</li>
-        <li>Optional features you enable (such as account sign-in, cloud sync, widgets, or Live Activities).</li>
-      </ul>
-      <p>This Policy does not govern Apple Inc., payment processors, or other third parties that operate their own services; their handling of data is subject to their respective policies.</p>
-
-      <h2>3. What counts as personal data</h2>
-      <p>For this Policy, “personal data” means information relating to an identified or identifiable person. Examples include activity records and journal entries you create, photos you attach to activities, an email you provide for an account, on-device subscription entitlement status, and technical identifiers linked to your use of the App (where applicable). Information that has been anonymized and cannot reasonably be re-linked to you is generally not personal data.</p>
-
-      <h2>4. Local-first principle</h2>
-      <p>Our core promise: activity records, tags, goals, plans, journal / daily sentence entries, photo attachments, check-ins, and habit insights are <strong>stored on your device</strong> and remain under your control. We do not sell this content to advertisers or share it with third parties for cross-context behavioral advertising. When the device is signed into iCloud and Local-only is off, business records also sync via your Apple iCloud (CloudKit) private database (including guests who have not signed in to the App).</p>
-      <p>By default the App syncs business data via your <strong>Apple iCloud (CloudKit) private database</strong> when the device is signed into iCloud and Local-only mode is off (including guest use before App sign-in). You can enable Local-only under Settings → Cloud Sync to turn sync off (requires app restart). Sign in with Apple is primarily for account identity; the sign-in screen also describes the default sync policy.</p>
-
-      <h2>5. Information we process</h2>
-      <p><strong>5.1 Content you create</strong></p>
-      <ul>
-        <li>Activities and time records, tags, goals, plans, journal / daily sentence entries;</li>
-        <li>Photos and captions attached to activities;</li>
-        <li>Check-ins, habit insight states, and in-app preferences;</li>
-        <li>Exported files (if you use export features).</li>
-      </ul>
-      <p>This content is stored locally in on-device databases or the App sandbox by default.</p>
-
-      <p><strong>5.2 Device permissions</strong> (only after you grant access)</p>
-      <ul>
-        <li><strong>Microphone &amp; Speech Recognition:</strong> used for voice input to log activities. Recognition uses Apple system APIs; depending on device settings, Apple’s speech services may require a network connection and are governed by Apple’s privacy policy. We do not upload recordings or transcripts to our own servers.</li>
-        <li><strong>Location:</strong> used only to match the wallpaper sky to local sunrise and sunset. Coordinates are used on-device for solar math and are <strong>not uploaded</strong> to our servers or CloudKit. We do <strong>not</strong> prompt at launch; the system dialog appears when you open Settings → Calendar &amp; Display or turn on Follow local sunrise. If you decline, the wallpaper uses a timezone-based approximation.</li>
-        <li><strong>Photos &amp; Camera:</strong> used to select or capture photos for activities; photos remain on-device unless you take separate action to share them.</li>
-        <li><strong>Notifications:</strong> used for plan reminders, timer-related alerts, and similar features; you may disable them in system Settings at any time.</li>
-      </ul>
-
-      <p><strong>5.3 Purchases</strong></p>
-      <p>LumDay Pro auto-renewable subscriptions (monthly/yearly) and lifetime purchases are processed through Apple App Store / StoreKit. We do not receive your full payment card number or Apple ID password. We may store plan tier, entitlement status, expiration, or lifetime flags on-device to unlock features and support Restore Purchases.</p>
-
-      <p><strong>5.4 Account &amp; authentication (if you use it)</strong></p>
-      <p>Launch sign-in is <strong>Sign in with Apple</strong>. We may process the Apple user identifier, optional email (including Hide My Email), and name (often only on first authorization). Apple does <strong>not</strong> provide a profile photo to the App; if you upload an avatar, it stays on-device only. Email/password registration may return in a later version.</p>
-      <p><strong>5.4.1 Cloud sync (CloudKit, on by default; Local-only available)</strong></p>
-      <p>While default sync is on (Local-only off), the following may be stored in the <strong>iCloud CloudKit private database</strong> under your Apple ID (hosted by Apple, not on Developer-owned servers): activity records (titles, feeling log / notes field, times, source, and optional historical imported-app identifiers <code>sourceBundleId</code>), tags, check-ins, goals and phases, daily sentences, planned blocks, and sync metadata. The following are <strong>not</strong> uploaded to CloudKit: activity photo and goal-cover image files, account avatar files, voice recordings and transcripts, and on-device AI prompt payloads. Photos remain on-device by default and are not uploaded to Developer servers unless you separately share them. If the on-device store was created in local-only mode, enabling cloud sync may automatically migrate metadata (image files stay on device).</p>
-
-      <p><strong>5.5 Technical &amp; diagnostic information</strong></p>
-      <ul>
-        <li>The App does <strong>not</strong> integrate third-party advertising trackers and does not sell personal data to ad networks.</li>
-        <li>To understand feature use and improve the App, we may send <strong>anonymous</strong> usage signals to <strong>TelemetryDeck</strong> (a privacy-first analytics service hosted in the EU), such as whether you tapped the timer or voice button, opened Insights, or successfully saved a timed activity. Signals are event names and may include a boolean for Pro entitlement; they do <strong>not</strong> include activity titles, feeling-log text, voice transcripts, photos, or your Apple account. See the <a href="https://telemetrydeck.com/privacy/">TelemetryDeck privacy notice</a>.</li>
-        <li>If you share crash reports or diagnostics with Apple, Apple processes that information under its policies; we may review anonymized or aggregated crash data through Apple developer tools to fix issues.</li>
-        <li>To support widgets, Live Activities, or App Groups, limited summary data may be shared on your device between the App and its extensions without uploading to our servers (unless you separately enable sync).</li>
-      </ul>
-
-      <p><strong>5.6 Widgets, Live Activities &amp; App Groups</strong></p>
-      <p>To show timer or plan summaries on the Lock Screen, Home Screen, or Dynamic Island, the App may share limited state through Apple’s App Group container between the main App and extensions. This sharing stays on your device and supports features you have enabled.</p>
-
-      <h2>6. How we use information</h2>
-      <p>We use information to:</p>
-      <ul>
-        <li>Provide, maintain, and improve App features (timer, calendar, goals, plans, insights, export, Pro entitlements);</li>
-        <li>Use system capabilities you authorize (speech, photos, notifications, location);</li>
-        <li>Verify subscription status, support restore purchases, and perform our contract with you;</li>
-        <li>Provide authentication and sync if you enable account features;</li>
-        <li>Respond to support requests, enforce this Policy, and comply with law;</li>
-        <li>Send important service-related notices where permitted (e.g., material Policy changes).</li>
-      </ul>
-      <p>We do not use your personal data for sale to third parties or unrelated profiling for advertising.</p>
-
-      <h2>7. Legal bases (for EEA / UK readers)</h2>
-      <p>Where law requires a legal basis, we rely on the following (depending on the activity):</p>
-      <ul>
-        <li><strong>Contract:</strong> to provide App features and Pro entitlements you request;</li>
-        <li><strong>Legitimate interests:</strong> to secure the App, fix bugs, and improve functionality, where those interests are not overridden by your rights;</li>
-        <li><strong>Consent:</strong> for system permissions (microphone, photos, notifications, location) and, where required, optional features such as marketing email if ever offered—you may withdraw consent at any time through system or in-app controls.</li>
-      </ul>
-      <p>We do not claim to be subject to every rule in every jurisdiction by default; where your local law grants additional rights, we will honor them as required.</p>
-
-      <h2>8. Sharing &amp; third parties</h2>
-      <p>We do not sell your personal data. Limited sharing may occur:</p>
-      <ul>
-        <li><strong>Apple:</strong> App Store payments, StoreKit, system speech recognition, iCloud (if used by a feature), crash reporting—each governed by Apple’s policies.</li>
-        <li><strong>TelemetryDeck:</strong> anonymous product-usage signals (event names, no activity content) to improve features, under TelemetryDeck’s privacy policy.</li>
-        <li><strong>Service providers:</strong> if we later use hosting, email, or support tools, we will share only what is necessary and require confidentiality and security commitments.</li>
-        <li><strong>Legal requirements:</strong> we may disclose information when required by law, court order, or to protect rights and safety.</li>
-        <li><strong>Business transfers:</strong> if we undergo a merger, acquisition, or asset sale, we will require successors to honor this Policy or provide equivalent protection and notify you where required by law.</li>
-      </ul>
-
-      <h2>9. Storage, security, retention &amp; deletion</h2>
-      <p><strong>Storage &amp; security:</strong> on-device data is protected by iOS sandboxing and device encryption. While <strong>default sync is on</strong> (Local-only off), business data is also stored in Apple iCloud CloudKit private databases under Apple’s policies and security controls. We use reasonable technical and organizational measures to reduce unauthorized access, loss, or misuse, but no system is perfectly secure.</p>
-      <p><strong>Retention:</strong> on-device and (while default sync is on / Local-only is off) iCloud content remains until you delete or clear it. Entitlement records may be kept as long as needed to verify purchases. Support correspondence is kept as long as needed to resolve issues.</p>
-      <p><strong>Deletion:</strong></p>
-      <ul>
-        <li>While signed out, use Settings → Data → Clear local data: after confirmation, delete on-device business data only (synced iCloud data is not deleted). While signed in, use Delete account to remove on-device and synced cloud data;</li>
-        <li>Uninstalling the App usually removes on-device App data (subject to iOS behavior); synced iCloud data may remain until you delete the account or manage iCloud data in system Settings;</li>
-        <li>Manage, cancel, or request refunds for Apple subscriptions via Apple ID → Subscriptions;</li>
-        <li>Delete account in Settings → Account → Delete account after confirmation to remove sign-in state and on-device plus synced cloud business data. Signing out only ends the session and removes the on-device avatar; it does not delete activity records.</li>
-        <li>You may also email developer.lumday@outlook.com for help (subject to legal retention obligations).</li>
-      </ul>
-
-      <h2>10. International transfers</h2>
-      <p>On-device content stays on your device. While default sync is on, CloudKit data is processed by Apple under its infrastructure and policies and may involve cross-border processing. If you enable account or support services, related data may also be processed outside your country by service providers. Where required, we implement appropriate safeguards (such as standard contractual clauses or equivalent mechanisms, if applicable).</p>
-
-      <h2>11. Your rights</h2>
-      <p>Depending on your location, you may have rights to access, correct, delete, restrict, port, or object to processing, and to withdraw consent. You can usually:</p>
-      <ul>
-        <li>View, edit, or delete most on-device content in the App;</li>
-        <li>Manage permissions and notifications in iOS Settings;</li>
-        <li>Contact developer.lumday@outlook.com to exercise your rights.</li>
-      </ul>
-      <p>California residents: we do not “sell” or “share” personal information as defined under California law for cross-context behavioral advertising. EEA/UK users: you may lodge a complaint with a supervisory authority; we encourage you to contact us first.</p>
-      <p>We will respond within timeframes required by applicable law and may need to verify your identity.</p>
-
-      <h2>12. Children</h2>
-      <p>The App is not directed at children under 13 (or the higher age required in your jurisdiction). We do not knowingly collect personal information from children. If you believe we have inadvertently collected a child’s information, contact developer.lumday@outlook.com and we will delete it promptly.</p>
-
-      <h2>13. Changes</h2>
-      <p>We may update this Policy from time to time. For material changes, we will update the effective date and may notify you through in-app notice or App Store release notes. Continued use after an update means you acknowledge the revised Policy, except where law requires otherwise.</p>
-
-      <h2>14. Contact</h2>
-      <p>Questions, requests, or complaints about this Policy or our data practices:</p>
-      <p>Email: <a href="mailto:developer.lumday@outlook.com">developer.lumday@outlook.com</a></p>
+      <p class="meta">Effective date: 2026-10-13<br>Developer: LumDay (developer.lumday@outlook.com)<br>App: LumDay (“一记天光”)</p>
+      <h2>1. Information you save</h2>
+      <p>Mood moments, tags, text, selected photos, daily handwritten journals, and app preferences are stored in the app's database or files on your device. An unfinished draft stays on this device and is excluded from replay analysis and manual backups. You can use the core recording features without signing in.</p>
+      <h2>2. iCloud and account sign-in</h2>
+      <p>When your device is signed in to iCloud and Local Only is off, business records use Apple's CloudKit private database. Apple controls synchronization and timing; it may take time. This version does not offer new LumDay account registration or sign-in. Existing accounts retain only sign-out, cleanup, and necessary identity-recovery paths; iCloud sync does not depend on a LumDay account. Apple's services are governed by Apple's privacy terms. Image files attached to legacy time records may remain only on the device where they were created.</p>
+      <h2>3. Dictation and photos</h2>
+      <p>The app requests microphone and speech-recognition access only when you choose dictation. Apple's system speech service performs recognition; network use and audio handling can depend on your system settings. The app does not retain raw audio as a journal entry or send audio or transcripts to a developer-operated server. Photos are read only after you select them with the system photo picker. Add-only Photos access is requested only when you choose to save a shared image to Photos.</p>
+      <h2>4. App lock</h2>
+      <p>You may set an app-specific passcode and choose to enable Face ID. Its verifier is stored in a Keychain item dedicated to this app on this device. The app lock controls interface access; it does not encrypt the app database or replace your device passcode.</p>
+      <h2>5. Manual backups</h2>
+      <p>A backup includes current and legacy records, journals, tags, and available attachments. The current archive format processes attachments as individual entries; reading legacy JSON backups is limited to 64 MiB. Backups are unencrypted, so keep the file somewhere secure. Imports are validated and merged with missing data; they do not clear existing records first.</p>
+      <h2>6. Analysis and sharing</h2>
+      <p>Emotion analysis uses moods, times, and tags that you explicitly saved. It describes co-occurrence in your records; it does not identify causes, diagnose a mental-health condition, or provide medical advice. You choose and preview content before a share image is created. The app does not upload that content to a developer-operated server or create a public link.</p>
+      <h2>7. Diagnostics, advertising, and retention</h2>
+      <p>This version does not integrate an ad-tracking SDK or start a product-usage analytics service. Crash diagnostics you choose to share in system settings are handled by Apple under Apple's terms. Data generally remains until you delete it, clear local data, or manage iCloud data. You manage manual backup files. Before turning off iCloud, make sure you have backed up data you want to keep.</p>
+      <h2>8. Children and contact</h2>
+      <p>The app is not directed to children under 13. For privacy questions or data requests, email <a href="mailto:developer.lumday@outlook.com">developer.lumday@outlook.com</a>.</p>
     </section>
   </main>
-  <script>
-    if ((navigator.language || "").toLowerCase().startsWith("en")) {
-      document.documentElement.classList.add("en");
-    }
-  </script>
+  <script>if ((navigator.language || "").toLowerCase().startsWith("en")) document.documentElement.classList.add("en");</script>
 </body>
 </html>
