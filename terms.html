@@ -5,215 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>使用条款 · Terms of Use · 一记天光</title>
   <style>
-    :root { color-scheme: light dark; --fg: #1a1a1a; --muted: #555; --link: #5b4fc7; --bg: #fafafa; --rule: #e5e5e5; }
-    @media (prefers-color-scheme: dark) {
-      :root { --fg: #f2f2f2; --muted: #bbb; --link: #b7a9ff; --bg: #121212; --rule: #333; }
-    }
+    :root { color-scheme: light dark; --fg: #1a1a1a; --muted: #555; --link: #3D8EC4; --bg: #fafafa; }
+    @media (prefers-color-scheme: dark) { :root { --fg: #f2f2f2; --muted: #bbb; --link: #74B6E5; --bg: #121212; } }
     body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--fg); line-height: 1.65; }
     main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-    h1 { font-size: 1.55rem; margin: 0 0 0.35rem; }
-    h2 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
-    .meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 1.25rem; }
-    nav a { color: var(--link); text-decoration: none; font-size: 0.92rem; }
-    ul, ol { padding-left: 1.2rem; }
-    section[lang="en"] { display: none; }
-    html.en section[lang="zh-CN"] { display: none; }
-    html.en section[lang="en"] { display: block; }
-    .switch { margin: 0 0 1.25rem; font-size: 0.9rem; }
-    .switch button { background: none; border: 0; color: var(--link); font: inherit; font-weight: 600; cursor: pointer; padding: 0; }
+    h1 { font-size: 1.55rem; margin: 0 0 .35rem; } h2 { font-size: 1.1rem; margin: 1.6rem 0 .5rem; }
+    .meta { color: var(--muted); font-size: .92rem; margin-bottom: 1.25rem; }
+    nav a { color: var(--link); text-decoration: none; font-size: .92rem; }
+    section[lang="en"] { display: none; } html.en section[lang="zh-CN"] { display: none; } html.en section[lang="en"] { display: block; }
+    .switch { margin: 0 0 1.25rem; font-size: .9rem; } .switch button { background: none; border: 0; color: var(--link); font: inherit; font-weight: 600; cursor: pointer; padding: 0; }
   </style>
 </head>
 <body>
   <main>
     <nav><a href="index.html">← 首页 / Home</a></nav>
-    <p class="switch">
-      <button type="button" onclick="document.documentElement.classList.remove('en')">中文</button>
-      ·
-      <button type="button" onclick="document.documentElement.classList.add('en')">English</button>
-    </p>
-
+    <p class="switch"><button type="button" onclick="document.documentElement.classList.remove('en')">中文</button> · <button type="button" onclick="document.documentElement.classList.add('en')">English</button></p>
     <section lang="zh-CN">
       <h1>使用条款</h1>
-      <p class="meta">生效日期：2026-08-26<br>开发者（developer.lumday@outlook.com）<br>应用：「一记天光」（LumDay）</p>
-
-      <h2>一、协议的接受</h2>
-      <p>本使用条款（「本条款」）是您与开发者（「我们」）之间关于 iOS 应用「一记天光」（LumDay，「本应用」）的法律协议。下载、安装、访问或使用本应用，即表示您同意受本条款及我们的隐私政策约束。若您代表组织使用本应用，您声明有权使该组织受本条款约束。若您不同意，请勿使用本应用。</p>
-
-      <h2>二、许可授予</h2>
-      <p>在您遵守本条款及 Apple Media Services 条款与条件（含 App Store 使用规则）的前提下，我们授予您一项个人的、可撤销的、不可转让、非独占、有限的许可，供您在您拥有或控制的 Apple 品牌设备上，通过 App Store 合法获取的本应用副本，仅为个人非商业目的安装并使用。</p>
-      <p>您不得：出租、出借、出售、再许可、分发或商业化利用本应用；复制本应用（备份除外）；修改、翻译或创建衍生作品（法律明确允许除外）；反编译或试图提取源代码（法律明确允许除外）；或移除专有声明。Apple 与本应用相关的权利不受本条款限制。</p>
-
-      <h2>三、服务说明与免费/Pro 功能</h2>
-      <p>本应用提供时间记录、日历回顾、目标与计划、语音输入、习惯洞察、小组件、Live Activity 等功能。基础功能可免费使用；部分进阶能力（例如多个目标与计划、数据导出、更高标签/照片上限、AI 帮写日记等）可能需要订阅或购买「一记天光 Pro」（按月、按年或终身，以 App Store 展示为准）。</p>
-      <p>我们可能更新、调整或 discontinue 功能；免费与 Pro 功能边界以应用内及 App Store 说明为准。本应用按「本地优先」设计，许多数据默认保存在您的设备上，详见隐私政策。</p>
-
-      <h2>四、账号</h2>
-      <ul>
-        <li>您可在不登录的情况下使用大多数本地功能。</li>
-        <li>若使用账号、登录或同步功能，您须提供准确信息并妥善保管凭证；您对账号下的一切活动负责。</li>
-        <li>您不得冒用他人身份或共享账号以致违反安全要求。</li>
-        <li>我们可在合理怀疑欺诈、滥用或违法时暂停或终止账号访问（若适用）。</li>
-      </ul>
-
-      <h2>五、订阅与付款</h2>
-      <ul>
-        <li>自动续订订阅（按月/按年）与终身购买通过 Apple App Store / StoreKit 处理；价格、税费及币种以购买界面显示为准。</li>
-        <li><strong>自动续订：</strong>除非您在当前订阅期结束前至少 24 小时在 Apple ID 的「订阅」设置中关闭自动续订，否则订阅将按 Apple 规则自动续期，费用将从您的 Apple ID 扣取。</li>
-        <li>您可在 iOS「设置」→ Apple ID →「订阅」中查看、更改或取消订阅。</li>
-        <li>免费试用期（若有）未取消的，期满后将转为付费订阅，具体以 App Store 展示为准。</li>
-        <li>退款、账单争议由 Apple 按其政策处理；请通过 reportaproblem.apple.com 或 Apple 支持申请。</li>
-        <li>「恢复购买」用于在同一 Apple ID 下恢复已购 Pro 权益；不保证在所有设备或所有情形下均可恢复。</li>
-        <li>Pro 功能需有效订购或已购终身权益；订购失效后，相关功能可能受限，但您的本机数据通常仍保留在设备上（除非您主动删除）。</li>
-      </ul>
-
-      <h2>六、您的内容与对我们的许可</h2>
-      <ul>
-        <li>您保留对自己创建内容（活动、标签、目标、计划、日记、照片等）的权利。</li>
-        <li>为运营本应用，您授予我们一项有限的、非独占、可撤销、免版税的许可，仅用于在您的设备上及为提供您所请求的功能（含可选同步）而存储、复制、显示、处理与传输该等内容。</li>
-        <li>您声明您拥有或有权使用该等内容，且其不侵犯第三方知识产权、隐私权或其他权利，不违反适用法律。</li>
-        <li>我们无义务监控用户内容，但可在法律要求或发现明显违法/侵权时删除或限制访问。</li>
-      </ul>
-
-      <h2>七、可接受使用</h2>
-      <p>您同意不会：</p>
-      <ul>
-        <li>以违法、欺诈、骚扰、诽谤或侵害他人权利的方式使用本应用；</li>
-        <li>试图未经授权访问本应用、其他用户数据或我们的系统；</li>
-        <li>干扰或破坏本应用、服务器或网络（含传播恶意代码、过度自动化请求）；</li>
-        <li>规避技术限制、订阅验证或安全机制；</li>
-        <li>对本应用进行逆向工程、反编译或反汇编，法律明确允许除外；</li>
-        <li>将本应用用于需专门资质的专业场景（如医疗、法律、财务诊断）而依赖其输出作为唯一依据。</li>
-      </ul>
-
-      <h2>八、外部服务与第三方</h2>
-      <p>本应用依赖 Apple 提供的服务与系统能力，包括但不限于 App Store、StoreKit、语音识别、照片库、通知、小组件与 Live Activity。产品用量分析使用 TelemetryDeck（匿名事件，不含活动内容）。您的使用亦受 Apple 及相关第三方条款与政策约束。我们不对 Apple 或第三方服务的中断、变更或政策负责。第三方网站或服务的链接（若有）仅为便利；我们不对其内容或做法背书。</p>
-
-      <h2>九、知识产权</h2>
-      <p>本应用及其原创内容、功能、设计、商标与服务标识（「一记天光」「LumDay」及相关标识）归开发者或许可方所有，受著作权及其他知识产权法保护。除本条款明确授予的有限许可外，不转移任何权利。Apple 与 Apple 标识为 Apple Inc. 的商标。</p>
-
-      <h2>十、免责声明</h2>
-      <p>在法律允许的最大范围内，本应用及所有相关服务均按「现状」及「现有」基础提供，不附带任何明示或默示保证，包括但不限于适销性、特定用途适用性、不侵权、持续可用、无错误或无病毒。</p>
-      <p>语音识别、习惯洞察、规则解读、AI 辅助写作（若提供）等输出可能不完整或不准确，仅供个人参考，<strong>不构成</strong>医疗、心理、法律、财务或其他专业建议。重大决策请咨询具备相应资质的专业人士。</p>
-      <p>您理解本地优先意味着数据主要存储在您的设备上；因设备丢失、损坏、未备份、系统升级、权限变更或 Apple 服务故障导致的丢失，我们在法律允许范围内不承担责任。</p>
-
-      <h2>十一、责任限制</h2>
-      <p>在法律允许的最大范围内，我们及我们的关联方、董事、员工与代理人对因本应用引起或与之相关的任何间接、附带、特殊、后果性或惩罚性损害，或利润、数据、商誉损失不承担责任，即使已被告知可能发生该等损害。</p>
-      <p>我们对因本条款或本应用产生的任何索赔的总责任，以以下较高者为准：（a）您在引起索赔之日前十二个月内就相关 Pro 功能向我们实际支付的金额；或（b）适用法律允许的最低金额。若您免费使用本应用，我们的总责任以法律允许的最低额为限。</p>
-      <p>部分司法辖区不允许排除或限制某些损害；在该等辖区，上述限制仅在法律允许范围内适用。</p>
-
-      <h2>十二、终止</h2>
-      <p>您可随时停止使用并卸载本应用。我们可在您违反本条款、从事滥用或法律要求时，暂停或终止向您提供本应用或相关功能（含账号功能，若适用）。终止后，您的使用许可结束，但依其性质应继续有效的条款（如知识产权、免责声明、责任限制、争议解决）仍然有效。</p>
-
-      <h2>十三、出口合规</h2>
-      <p>您声明您不在受全面禁运的国家/地区，且未被列为禁止接收美国或适用司法辖区出口的技术或服务的受限方。您同意遵守与使用、出口或再出口本应用相关的所有适用出口管制与制裁法律。</p>
-
-      <h2>十四、适用法律与争议</h2>
-      <p>除法律强制性规定外，本条款的解释与争议适用对您具有合理联系的法律，以及开发者可合理适用的法律，而不单一指定某一特定法院所在地，除非您所在地区法律另有强制规定。</p>
-      <p>发生争议时，双方应首先通过 developer.lumday@outlook.com 友好协商。协商不成的，您可依法向您居住地有管辖权的法院或监管机构寻求救济。</p>
-
-      <h2>十五、条款变更</h2>
-      <p>我们可能更新本条款。重大变更时将更新生效日期，并可能通过应用内通知或 App Store 说明等方式告知。变更后继续使用即表示接受新条款（法律另有要求除外）。若您不同意变更，请停止使用并取消订阅（如适用）。</p>
-
-      <h2>十六、联系我们</h2>
-      <p>邮箱：<a href="mailto:developer.lumday@outlook.com">developer.lumday@outlook.com</a></p>
-
-      <h2>十七、Apple 标准 EULA</h2>
-      <p>若 Apple 要求，您使用通过 App Store 获取的本应用亦受 Apple 媒体服务标准许可（Standard EULA）约束；与本条款冲突时，以 Apple 强制适用的条款为准。本条款是对该标准许可的补充。Apple 非本条款当事方，不对本应用承担支持或保修义务；任何索赔（含产品责任）亦可向 Apple 提出，详见 Apple 标准 EULA。</p>
+      <p class="meta">生效日期：2026-10-13<br>开发者：LumDay（developer.lumday@outlook.com）<br>应用：「一记天光」（LumDay）</p>
+      <h2>一、许可与用途</h2>
+      <p>在遵守本条款和 Apple App Store 规则的前提下，我们授予你在自己控制的 Apple 设备上个人使用本应用的有限、非独占、不可转让许可。你不得违法使用、干扰应用运行或规避适用的安全机制；法律允许的情形除外。</p>
+      <h2>二、功能与访问</h2>
+      <p>本版本用于记录心情片刻、整理标签、书写每日回顾、查看记录分析以及生成由你选择的分享图片。当前核心记录与回顾功能无需订阅即可使用。我们可能更新或调整功能；如果未来提供付费功能，购买价格、周期和权益会在购买界面单独说明。</p>
+      <h2>三、你的内容</h2>
+      <p>你保留自己创建内容的权利，并负责确保其合法。你授权应用在设备上存储、显示和处理内容，以提供你选择的功能；只有在你启用 iCloud 或主动使用系统分享时，数据才按对应流程传输。备份文件未加密，应由你妥善保管。</p>
+      <h2>四、分析</h2>
+      <p>应用的情绪分析只汇总你明确保存的记录，不判断因果关系，也不构成医疗、心理或其他专业建议。请勿仅依据应用内容作出需要专业判断的重要决定。</p>
+      <h2>五、第三方服务与可用性</h2>
+      <p>iCloud、语音识别、照片选择、Face ID 和 App Store 等 Apple 服务受 Apple 条款约束。我们无法保证这些服务持续可用，也无法保证设备故障、系统限制或未自行备份时的数据不会丢失。</p>
+      <h2>六、免责声明与责任</h2>
+      <p>在适用法律允许范围内，本应用按现状提供，不保证始终无错误或不间断。法律不得排除的消费者权利不受本条款影响。对间接或后果性损失的任何责任限制，仅在适用法律允许范围内适用。</p>
+      <h2>七、变更与联系</h2>
+      <p>我们可能更新本条款并修改生效日期。重大变更会通过应用内或 App Store 信息告知。问题请联系 <a href="mailto:developer.lumday@outlook.com">developer.lumday@outlook.com</a>。通过 App Store 获取的应用还受 Apple 标准许可协议约束；强制适用的 Apple 条款优先。</p>
     </section>
-
     <section lang="en">
       <h1>Terms of Use</h1>
-      <p class="meta">Effective date: 2026-08-26<br>Developer (developer.lumday@outlook.com)<br>App: LumDay (“一记天光”)</p>
-
-      <h2>1. Agreement &amp; acceptance</h2>
-      <p>These Terms of Use (“Terms”) are a legal agreement between you and the Developer (“we,” “us”) for the iOS application LumDay (“一记天光,” the “App”). By downloading, installing, accessing, or using the App, you agree to these Terms and our Privacy Policy. If you use the App on behalf of an organization, you represent that you have authority to bind that organization. If you do not agree, do not use the App.</p>
-
-      <h2>2. License grant</h2>
-      <p>Subject to these Terms and the Apple Media Services Terms and Conditions (including App Store Usage Rules), we grant you a personal, revocable, non-transferable, non-exclusive, limited license to install and use the App on Apple-branded devices you own or control, solely for personal, non-commercial purposes, from a copy legally obtained through the App Store.</p>
-      <p>You may not: rent, lease, lend, sell, sublicense, distribute, or commercialize the App; copy the App except as permitted for backup; modify, translate, or create derivative works (except as allowed by law); decompile or attempt to extract source code (except as allowed by law); or remove proprietary notices. Apple’s rights in and to the App are not limited by these Terms.</p>
-
-      <h2>3. Description of the service &amp; free vs Pro</h2>
-      <p>The App provides time tracking, calendar review, goals and plans, voice input, habit insights, widgets, Live Activities, and related features. Core features may be free; advanced capabilities (e.g., multiple goals and plans, export, higher tag/photo limits, AI journal assistance) may require a subscription or purchase of LumDay Pro (monthly, yearly, or lifetime, as shown on the App Store).</p>
-      <p>We may update, change, or discontinue features. Free vs Pro boundaries are described in the App and on the App Store. The App is local-first by design; see the Privacy Policy for how data is stored on your device.</p>
-
-      <h2>4. Accounts</h2>
-      <ul>
-        <li>You may use most local features without signing in.</li>
-        <li>If you use account, sign-in, or sync features, provide accurate information, keep credentials secure, and you are responsible for all activity under your account.</li>
-        <li>Do not impersonate others or share accounts in ways that compromise security.</li>
-        <li>We may suspend or terminate account access where we reasonably suspect fraud, abuse, or unlawful activity (if applicable).</li>
-      </ul>
-
-      <h2>5. Subscriptions &amp; billing</h2>
-      <ul>
-        <li>Auto-renewable subscriptions (monthly/yearly) and lifetime purchases are processed by Apple App Store / StoreKit; price, taxes, and currency are shown at purchase.</li>
-        <li><strong>Auto-renewal:</strong> unless you turn off auto-renew at least 24 hours before the end of the current period in Apple ID → Subscriptions, the subscription renews under Apple’s rules and your Apple ID is charged.</li>
-        <li>View, change, or cancel subscriptions in iOS Settings → Apple ID → Subscriptions.</li>
-        <li>Free trials (if offered) convert to paid subscriptions unless canceled before trial end, as shown on the App Store.</li>
-        <li>Refunds and billing disputes are handled by Apple under its policies (e.g., reportaproblem.apple.com or Apple Support).</li>
-        <li>“Restore Purchases” restores Pro entitlements for the same Apple ID; restoration is not guaranteed in all cases or on all devices.</li>
-        <li>Pro features require an active subscription or valid lifetime purchase; if entitlement lapses, features may be limited, but on-device data generally remains unless you delete it.</li>
-      </ul>
-
-      <h2>6. Your content &amp; license to us</h2>
-      <ul>
-        <li>You retain ownership of content you create (activities, tags, goals, plans, journal entries, photos, etc.).</li>
-        <li>You grant us a limited, non-exclusive, revocable, royalty-free license to store, copy, display, process, and transmit that content solely on your devices and as needed to provide features you request (including optional sync).</li>
-        <li>You represent that you own or have rights to your content and that it does not infringe third-party rights or violate law.</li>
-        <li>We are not obligated to monitor user content but may remove or restrict access where required by law or for clear unlawful/infringing material.</li>
-      </ul>
-
-      <h2>7. Acceptable use</h2>
-      <p>You agree not to:</p>
-      <ul>
-        <li>Use the App unlawfully, fraudulently, to harass, defame, or infringe others’ rights;</li>
-        <li>Attempt unauthorized access to the App, other users’ data, or our systems;</li>
-        <li>Interfere with or disrupt the App, servers, or networks (including malware or excessive automated requests);</li>
-        <li>Circumvent technical limits, subscription verification, or security measures;</li>
-        <li>Reverse engineer, decompile, or disassemble the App except where law expressly permits;</li>
-        <li>Rely on App output alone for regulated professional decisions (medical, legal, financial, etc.) without qualified advice.</li>
-      </ul>
-
-      <h2>8. External services &amp; third parties</h2>
-      <p>The App relies on Apple services and system capabilities, including App Store, StoreKit, speech recognition, photo library, notifications, widgets, and Live Activities. Product-usage analytics uses TelemetryDeck (anonymous events, no activity content). Your use is also subject to Apple’s and those third parties’ terms and policies. We are not responsible for interruptions, changes, or policies of Apple or third parties. Links to third-party sites or services (if any) are for convenience only; we do not endorse their content or practices.</p>
-
-      <h2>9. Intellectual property</h2>
-      <p>The App and its original content, features, design, trademarks, and service marks (“一记天光,” “LumDay,” and related marks) are owned by the Developer or licensors and protected by copyright and other laws. No rights are transferred except the limited license in these Terms. Apple and the Apple logo are trademarks of Apple Inc.</p>
-
-      <h2>10. Disclaimer of warranties</h2>
-      <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE APP AND ALL RELATED SERVICES ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, CONTINUOUS AVAILABILITY, OR ERROR-FREE OPERATION.</p>
-      <p>Speech recognition, habit insights, rule-based interpretations, and AI-assisted writing (if offered) may be incomplete or inaccurate and are for personal reference only—they are <strong>not</strong> medical, psychological, legal, financial, or other professional advice. Consult qualified professionals for important decisions.</p>
-      <p>Because the App is local-first, data primarily resides on your device. To the extent permitted by law, we are not liable for loss due to device loss, damage, failure to back up, OS upgrades, permission changes, or Apple service outages.</p>
-
-      <h2>11. Limitation of liability</h2>
-      <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE AND OUR AFFILIATES, DIRECTORS, EMPLOYEES, AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR LOSS OF PROFITS, DATA, OR GOODWILL, ARISING FROM OR RELATED TO THE APP, EVEN IF ADVISED OF THE POSSIBILITY.</p>
-      <p>OUR TOTAL LIABILITY FOR ANY CLAIM ARISING FROM THESE TERMS OR THE APP IS LIMITED TO THE GREATER OF: (A) AMOUNTS YOU ACTUALLY PAID US FOR THE RELEVANT PRO FEATURES IN THE TWELVE MONTHS BEFORE THE CLAIM; OR (B) THE MINIMUM AMOUNT PERMITTED BY LAW. IF YOU USE THE APP FOR FREE, OUR TOTAL LIABILITY IS LIMITED TO THE MINIMUM PERMITTED BY LAW.</p>
-      <p>Some jurisdictions do not allow certain exclusions or limitations; in those jurisdictions, the above applies only to the extent permitted.</p>
-
-      <h2>12. Termination</h2>
-      <p>You may stop using and uninstall the App at any time. We may suspend or terminate access if you materially breach these Terms, engage in abuse, or where required by law. Upon termination, your license ends, but provisions that by nature should survive (e.g., IP, disclaimers, liability limits, dispute resolution) remain in effect.</p>
-
-      <h2>13. Export compliance</h2>
-      <p>You represent that you are not located in a comprehensively embargoed country and are not a prohibited party under applicable export or sanctions laws. You agree to comply with all applicable export control and sanctions laws regarding use, export, or re-export of the App.</p>
-
-      <h2>14. Governing law &amp; disputes</h2>
-      <p>Except where mandatory law provides otherwise, these Terms are governed by laws reasonably connected to you and to the Developer, without singling out a specific court location unless required by the law of your residence.</p>
-      <p>Disputes should first be addressed amicably via developer.lumday@outlook.com. If unresolved, you may seek remedies in courts or authorities with jurisdiction under applicable law in your place of residence.</p>
-
-      <h2>15. Changes to these Terms</h2>
-      <p>We may update these Terms. For material changes, we will update the effective date and may notify you via in-app notice or App Store release notes. Continued use after changes means acceptance, except where law requires otherwise. If you disagree, stop using the App and cancel subscriptions if applicable.</p>
-
-      <h2>16. Contact</h2>
-      <p>Email: <a href="mailto:developer.lumday@outlook.com">developer.lumday@outlook.com</a></p>
-
-      <h2>17. Apple Standard EULA</h2>
-      <p>Where Apple requires, your use of the App obtained through the App Store is also subject to Apple’s Standard Licensed Application End User License Agreement. If there is a conflict, Apple’s mandatory terms prevail. These Terms supplement that Standard EULA. Apple is not a party to these Terms and has no obligation to furnish maintenance or support for the App; product claims may also be directed to Apple as described in Apple’s Standard EULA.</p>
+      <p class="meta">Effective date: 2026-10-13<br>Developer: LumDay (developer.lumday@outlook.com)<br>App: LumDay (“一记天光”)</p>
+      <h2>1. License and use</h2>
+      <p>Subject to these Terms and Apple's App Store rules, we grant you a limited, non-exclusive, non-transferable license to use the app personally on Apple devices you own or control. Do not use the app unlawfully, disrupt its operation, or bypass applicable security measures, except where law permits.</p>
+      <h2>2. Features and access</h2>
+      <p>This version lets you record mood moments, organize tags, write daily reflections, review analyses of your records, and create share images from content you select. The current core recording and review features do not require a subscription. We may update or change features. If paid features are offered later, their price, billing period, and benefits will be stated in the purchase screen.</p>
+      <h2>3. Your content</h2>
+      <p>You retain rights to the content you create and are responsible for ensuring it is lawful. You authorize the app to store, display, and process your content on your device to provide the features you choose. Data is transmitted only through a flow you enable, such as iCloud or the system share sheet. Backup files are unencrypted and should be kept secure.</p>
+      <h2>4. Analysis</h2>
+      <p>Emotion analysis summarizes only records you explicitly saved. It does not establish cause and effect or provide medical, psychological, or other professional advice. Do not rely on app content alone for decisions that require professional judgment.</p>
+      <h2>5. Third-party services and availability</h2>
+      <p>Apple services such as iCloud, speech recognition, photo selection, Face ID, and the App Store are governed by Apple's terms. We cannot guarantee their availability or prevent data loss caused by device failure, system limits, or a lack of a separate backup.</p>
+      <h2>6. Disclaimer and liability</h2>
+      <p>To the extent permitted by applicable law, the app is provided “as is” without a guarantee of uninterrupted or error-free operation. Consumer rights that cannot legally be excluded remain unaffected. Any limitation for indirect or consequential loss applies only to the extent permitted by law.</p>
+      <h2>7. Changes and contact</h2>
+      <p>We may update these Terms and their effective date. Material changes will be noted in the app or App Store information. Contact <a href="mailto:developer.lumday@outlook.com">developer.lumday@outlook.com</a> with questions. App Store copies are also subject to Apple's Standard Licensed Application Agreement; mandatory Apple terms prevail.</p>
     </section>
   </main>
-  <script>
-    if ((navigator.language || "").toLowerCase().startsWith("en")) {
-      document.documentElement.classList.add("en");
-    }
-  </script>
+  <script>if ((navigator.language || "").toLowerCase().startsWith("en")) document.documentElement.classList.add("en");</script>
 </body>
 </html>
